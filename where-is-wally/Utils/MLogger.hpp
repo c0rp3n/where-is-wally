@@ -11,10 +11,10 @@ namespace Utils
 {
     class MLogger
     {
-	public:
-		MLogger()
-		{
-		};
+    public:
+        MLogger()
+        {
+        };
 
         MLogger(std::string module)
         {
@@ -22,16 +22,16 @@ namespace Utils
             moduleName = module;
         };
 
-		virtual ~MLogger()
-		{
-		}
+        virtual ~MLogger()
+        {
+        }
         
     private:
         std::string moduleName;
         Logger *logger;
     
     public:
-		void Log(std::string msg)
+        void Log(std::string msg)
         {
             logger->Log("[" + moduleName + "]: " + msg);
         }

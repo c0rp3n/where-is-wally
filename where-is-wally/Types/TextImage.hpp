@@ -12,17 +12,17 @@
 class TextImage
 {
 public:
-	Utils::MLogger logger = Utils::MLogger::MLogger("TextImage");
-	int x; 
-	int y;
-	std::vector<uint32_t> data;
+    Utils::MLogger logger = Utils::MLogger::MLogger("TextImage");
+    int x; 
+    int y;
+    std::vector<uint32_t> data;
 
-	TextImage();
-	TextImage(std::string filepath);
-	~TextImage();
+    TextImage();
+    TextImage(std::string filepath);
+    ~TextImage();
 
 private:
-	void GetTextImageSize(std::string filepath);
-	void ReadTextImage(std::string filepath);
+    void GetTextImageSize(std::string filepath);
+    void ReadTextImage(std::string filepath);
 };
 
